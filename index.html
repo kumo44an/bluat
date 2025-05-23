@@ -13,7 +13,7 @@
       font-size: 10vw;
       font-weight: bold;
       font-family: sans-serif;
-      transition: background-color 0.005s linear, color 0.005s linear;
+      transition: background-color 0.1s linear, color 0.1s linear;
     }
 
     .white-bg {
@@ -35,7 +35,7 @@
     setInterval(() => {
       document.body.className = isBlack ? 'white-bg' : 'black-bg';
       isBlack = !isBlack;
-    }, 1000); // смена каждые 1000 миллисекунд (1 секунда)
+    }, 100); // меняется каждые 100 мс
   </script>
 </body>
 </html>
