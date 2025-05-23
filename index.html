@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <title>ПОСОСАЛ</title>
   <style>
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
+      height: 100%;
       background-color: black;
       color: red;
-      font-size: 100px;
-      text-align: center;
       font-family: Arial, sans-serif;
     }
 
@@ -18,8 +18,12 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
-      overflow: auto;
+      height: 100%;
+    }
+
+    .title {
+      font-size: 150px;
+      text-align: center;
     }
 
     .image {
@@ -27,14 +31,15 @@
       height: 3000px;
       background: url('https://i.ibb.co/M5BdV67p/posos.jpg') no-repeat center;
       background-size: cover;
-      margin-top: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div>ПОСОСАЛ</div>
+    <div class="title">ПОСОСАЛ</div>
     <div class="image"></div>
   </div>
 </body>
 </html>
+
