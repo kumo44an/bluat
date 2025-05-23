@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>ПОСОСАЛ</title>
   <style>
     body {
@@ -15,10 +15,18 @@
       font-family: sans-serif;
     }
 
-    .image-container img {
-      width: 40px;       /* Точно 40 пикселей */
-      height: 40px;      /* Точно 40 пикселей */
+    .image-container {
+      width: 40px;
+      height: 40px;
+      overflow: hidden;
       margin-bottom: 20px;
+    }
+
+    .image-container img {
+      width: 40px;
+      height: 40px;
+      display: block;
+      object-fit: contain;
     }
 
     .text {
@@ -32,7 +40,7 @@
 </head>
 <body>
   <div class="image-container">
-    <img src="https://i.ibb.co/M5BdV67p/posos.jpg" alt="Картинка">
+    <img src="https://i.ibb.co/M5BdV67p/posos.jpg" alt="Картинка" />
   </div>
   <div class="text">ПОСОСАЛ</div>
 </body>
