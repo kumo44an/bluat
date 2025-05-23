@@ -7,21 +7,33 @@
     body {
       margin: 0;
       height: 100vh;
-      background-image: url('https://i.ibb.co/M5BdV67p/posos.jpg'); /* можно заменить на свою ссылку */
-      background-size: cover;
-      background-position: center;
+      background-color: black; /* Чёрный фон */
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
+      font-family: sans-serif;
+    }
+
+    .image-container img {
+      width: 10cm;  /* Примерно 10 см */
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .text {
       font-size: 10vw;
       font-weight: bold;
-      font-family: sans-serif;
       color: red;
-      text-shadow: 2px 2px 10px black; /* для читаемости на фоне */
+      text-shadow: 2px 2px 10px black;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  ПОСОСАЛ
+  <div class="image-container">
+    <img src="https://i.ibb.co/M5BdV67p/posos.jpg" alt="Картинка">
+  </div>
+  <div class="text">ПОСОСАЛ</div>
 </body>
 </html>
